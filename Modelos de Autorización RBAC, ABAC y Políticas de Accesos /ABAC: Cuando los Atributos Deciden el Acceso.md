@@ -2,12 +2,9 @@
 A lo cotrario de RBAC que usa roels especificos, ABAC se centra en dar accesos de acuredo a diferentes atributos
 
 ### Opera sobre 4 categorias:
-	1- Atributos de Sujeto: describen el usuario ( dep, titulo)
-	2- Atributosde accion: definen que se intenta hacer ( leer, eliminar, aprobar)
-	3- Atributos de objeto: caracterixan el recurso (tpo de archivo, calsificacion de confidencialidad
-	4- Atributos contextaules: capturan el entorno ( hora, ubicacion, dispositivo) 
-	
-	
-	<img width="1093" height="463" alt="image" src="https://github.com/user-attachments/assets/7fc8e262-04d4-4ffe-8cda-53a15b60c2a3" />
+1.	Atributos de Sujeto: describen el usuario ( dep, titulo)
+2.	Atributosde accion: definen que se intenta hacer ( leer, eliminar, aprobar)
+3.	Atributos de objeto: caracterixan el recurso (tpo de archivo, calsificacion de confidencialidad
+4.	Atributos contextaules: capturan el entorno ( hora, ubicacion, dispositivo) 
 
-	
+<img width="1384" height="580" alt="image" src="https://github.com/user-attachments/assets/2ba46b36-53be-4661-b72a-72bd733229eb" />
