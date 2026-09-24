@@ -1,3 +1,5 @@
+# El Ciclo de Vida de PAM
+
 ## 📌 Definir y Clasificar
 Establecer políticas de seguridad de TI que cubran explícitamente cuentas privilegiadas. Las funciones de negocio dependen de sistemas y datos de manera distinta en cada organización; esta fase define qué constituye 'privilegiado' en tu contexto específico.
 
