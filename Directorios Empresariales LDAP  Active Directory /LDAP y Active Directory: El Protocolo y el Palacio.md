@@ -1,9 +1,23 @@
-## 👉 LDAP Lightweight Directory Access: 
+# LDAP, Active Directory y Distinguished Name
 
-Es un protocolo que trabaja con redes IP, para consultar o modificar directorios
-Usan puertos 389 que es el puerto estándar, y 636 que es más seguro (LDAPS)
+## 📡 LDAP (Lightweight Directory Access Protocol)
+- Es un protocolo que trabaja sobre **redes IP** para consultar o modificar directorios.  
+- Utiliza:
+  - **Puerto 389** → estándar.  
+  - **Puerto 636 (LDAPS)** → conexión cifrada y más segura.  
 
-### Active Directory: Es un servicio de directorio desarrollado por Microsoft que implementa LDAP, el mismo utiliza diferentes protocolos como DNS, Kerberos TGT, y NTLM para  compatibilidad
+---
 
-### Distinguished Name: Es como una dirección postal completa: se forma del ID del usuario, 
-uid=john.doe,ou=People,dc=example,dc=com identifica únicamente a un usuario en la jerarquía del directorio.
+## 🗂️ Active Directory (AD)
+- Servicio de directorio desarrollado por **Microsoft** que implementa LDAP.  
+- Integra diferentes protocolos para compatibilidad y seguridad:
+  - **DNS** → resolución de nombres.  
+  - **Kerberos (TGT)** → autenticación segura basada en tickets.  
+  - **NTLM** → mecanismo de autenticación heredado.  
+
+---
+
+## 🏷️ Distinguished Name (DN)
+- Funciona como una **dirección postal completa** dentro del directorio.  
+- Identifica de manera única a un objeto (usuario, grupo, recurso).  
+- Ejemplo:  
