@@ -1,9 +1,28 @@
-## RBAC Básico (Core RBAC): 
-Es el modelo central
+# Modelos de RBAC
 
-## RBAC Jerárquico: 
-Se basa en el modelo basico e itroduce una jerarquia de roles. Ejemplo un rol hereda los permisos del anterior
+El **Role-Based Access Control (RBAC)** es un modelo de control de acceso basado en roles.  
+Existen diferentes variantes que amplían o restringen el modelo básico.
 
-## RBAC Restringido:
-• Separación Estática de Funciones (SSD) : ningún usuario puede tener roles mutuamente excluyentes (según lo defina la organización). La SSD impide, por ejemplo, que una persona realice y apruebe compras simultáneamente.
-• Segregación dinámica de funciones (DSD) : los usuarios pueden desempeñar roles incompatibles. Sin embargo, un mismo usuario no puede realizar ambos roles en una misma sesión. Esta restricción ayuda a controlar las amenazas a la seguridad interna, por ejemplo, al aplicar una regla que requiere que dos usuarios diferentes aprueben una acción.> 
+## 🔹 RBAC Básico (Core RBAC)
+- Modelo central y fundamental.  
+- Los permisos se asignan a **roles específicos**, y los usuarios heredan esos permisos al pertenecer a un rol.  
+
+---
+
+## 🔹 RBAC Jerárquico
+- Extiende el modelo básico introduciendo una **jerarquía de roles**.  
+- Un rol puede **heredar permisos** de otro rol superior.  
+- Ejemplo: el rol *Manager* hereda los permisos de *Employee*, además de sus propios privilegios.  
+
+---
+
+## 🔹 RBAC Restringido
+Introduce mecanismos de separación de funciones para evitar conflictos de interés o abuso de privilegios.
+
+### • Separación Estática de Funciones (SSD)
+- Impide que un usuario tenga roles **mutuamente excluyentes**.  
+- Ejemplo: una persona no puede **crear** y **aprobar** compras simultáneamente.  
+
+### • Separación Dinámica de Funciones (DSD)
+- Los usuarios pueden tener roles incompatibles, pero **no pueden ejercerlos en la misma sesión**.  
+- Ejemplo: un mismo usuario no puede iniciar y aprobar una transacción en una sola sesión; se requiere la participación de dos usuarios distintos.  
