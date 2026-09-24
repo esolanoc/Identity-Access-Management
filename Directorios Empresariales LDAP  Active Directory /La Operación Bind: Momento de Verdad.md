@@ -1,8 +1,31 @@
-Cuando un usuario decide autenticarse sobre una app protegida por LDAP, ocurre una secuencia precisa llamada Operación Bind (enlace).
+# Operación Bind en LDAP
 
-### El DSA Directory System Agent es el servidor LDAP - el cliente envía una solicitud de bind que contiene tres elementos, la versión del protocolo LDAP, el DN Distinguished Name y las credenciales del usuario
+Cuando un usuario se autentica en una aplicación protegida por **LDAP**, ocurre una secuencia precisa llamada **Operación Bind (enlace)**.  
+El **DSA (Directory System Agent)** es el servidor LDAP que recibe la solicitud de Bind enviada por el cliente.
 
-## 🔑 Existen dos tipos de Bind
+## 📑 Elementos de la solicitud Bind
+1. **Versión del protocolo LDAP**  
+2. **DN (Distinguished Name)** del usuario  
+3. **Credenciales** del usuario  
 
-Bind simple: Envía el DN y los credenciales, debe de usarse TLS por seguridad 
-SASL Simple Authentication and Security layer: usa un marco extensible que permite integrar mecanismos como Kerberos o certificados digitales ofreciendo autenticación más robusta para la empresa
+---
+
+## 🔑 Tipos de Bind
+
+### 1. Bind Simple
+- Envía directamente el **DN** y las **credenciales** (usuario/contraseña).  
+- Requiere el uso de **TLS/LDAPS** para proteger la transmisión.  
+- Es el método más básico, pero menos seguro si no se cifra la conexión.  
+
+### 2. Bind con SASL (Simple Authentication and Security Layer)
+- Utiliza un marco extensible que permite integrar mecanismos más robustos:  
+  - **Kerberos** (tickets de autenticación).  
+  - **Certificados digitales**.  
+- Ofrece autenticación más segura y flexible para entornos empresariales.  
+
+---
+
+## 📌 Resumen
+- **Bind** = operación de autenticación en LDAP.  
+- **Simple Bind** = DN + credenciales (requiere TLS).  
+- **SASL Bind** = autenticación avanzada con Kerberos o certificados.  
