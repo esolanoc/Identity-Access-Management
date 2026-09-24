@@ -20,4 +20,12 @@
 ## 🏷️ Distinguished Name (DN)
 - Funciona como una **dirección postal completa** dentro del directorio.  
 - Identifica de manera única a un objeto (usuario, grupo, recurso).  
-- Ejemplo:  
+- Ejemplo:  Este DN representa al usuario **john.doe** dentro de la jerarquía del directorio.  
+
+---
+
+## 🔑 Conceptos clave
+- **LDAP** → protocolo de acceso a directorios.  
+- **Active Directory** → implementación de LDAP con protocolos adicionales.  
+- **DN** → identificador único de cada objeto en el directorio.  
+
